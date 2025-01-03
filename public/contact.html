@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran&family=Shadows+Into+Lights&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Spectral</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="./Assets/images/image01.png" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./products.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="Assets/images/cart.webp" width="30px" height="30px"></a>
+            <img src="Assets/images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>Place Holder <br>Header</h1>
+                <p>Lorem Ipsum blah blah blah blah blah <br>blah blah blah</p>
+                <a href="" class="btn">Explore Now &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img src="Assets/images/banner.png">
+            </div>
+        </div>
+    </div>
+    <main>
+        <section>
+            <h2>Contact Us</h2>
+            <p>Please fill out the form below to get in touch with us. We would love to hear your feedback or answer any questions you may have.</p>
+            <form action="/submit-form" method="POST">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div class="field-group">
+                        <label for="firstlast" class="required">Name:</label>
+                        <input type="text" id="firstlast" name="name" required autofocus placeholder="Enter your name">
+                    </div>
+                    <div class="field-group">
+                        <label for="message" class="required">Message:</label>
+                        <textarea id="message" name="message" required placeholder="Your message"></textarea>
+                    </div>
+                    <div class="field-group">
+                        <label for="color">Favorite Color:</label>
+                        <select id="color" name="color" required>
+                            <option value="red">Red</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                        </select>
+                    </div>
+                    <div class="field-group">
+                        <label for="email" class="required">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    </div>
+                    <div class="field-group">
+                        <label for="phone" class="required">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                    </div>
+                    <label for ="how">How did you hear about us?</label>
+                        <select name="referrer" id="how">
+                            <option value="Instagram">Instagram</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="Friend">Friend</option>
+                            <option value="Advertisment">Advertisment</option>
+                            <option value="Etsy">Etsy</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    <div class="field-group">
+                        <label>Preferred Contact Method:</label>
+                        <div class="radio-group">
+                            <label for="contact-email">
+                                <input type="radio" id="contact-email" name="contactMethod" value="email" required>
+                                Email
+                            </label>
+                            <label for="contact-phone">
+                                <input type="radio" id="contact-phone" name="contactMethod" value="phone" required>
+                                Phone
+                            </label>
+                        </div>
+                    </div>
+                    <label id="submit">
+                        <button type="submit" id="submit" name="submit-form">Submission review</button>
+                    </label>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Please Leave a Review!</h3>
+                    <p>Please Tell me how to improve my site or products!</p>
+                </div>
+                <div class="footer-col-2">
+                    <img src="Assets/images/logo.png">
+                    <p>I need help through college please.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons/Discounts</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Affiliate Link</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Me!</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Etsy</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2024 - Samuel Jamieson</p>
+        </div>
+    </div>
+    <script src="Assets/js/main.js"></script>
+</body>
+</html>
